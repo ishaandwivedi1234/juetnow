@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* navbar--------------------------------------------- */
+
+.navbar-nav > a {
+  font-size: 18px;
+  margin-top: 7px;
+  margin-right: 45px;
+  font-family: "Hubballi", cursive;
+  color: #043b2a;
+}
+
+.navbar-nav > a:hover {
+  color: rgb(199, 199, 199);
+}
+
+.web-logo span {
+  padding-left: 16px;
+  font-size: 25px;
+  color: #043b2a;
+  font-weight: bold;
+  font-family: "Hubballi", cursive;
+}
+
+/* navbar--------------------------------------------- */
+
+/* section-title-------------------------------------- */
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-family: "Hubballi", cursive;
+  position: relative;
+  color: #0a8f5e;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0cb075;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* section-title-------------------------------------- */
+
+/* main-banner---------------------------------------- */
+
+.banner {
+  background: url(../assets/img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.banner .main-section .main-heading {
+  margin-top: 140px;
+  color: #0cb075;
+  /* font-family: "Shizuru", cursive; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.banner .main-section .sec-content p {
+  margin-top: 5px;
+  font-size: 25px;
+  font-family: "Hubballi", cursive;
+  color: rgb(75, 75, 75);
+}
+
+.banner .main-section .download-button {
+  margin-top: 14px;
+  background-color: #0cb075;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-family: "Hubballi", cursive;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.main-sec-image {
+  background-image: url(../assets/img/login-art.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.banner .main-section .download-button:hover {
+  background-color: #077a50;
+}
+
+@media only screen and (max-width: 600px){
+  .banner .main-section .sec-content{
+    text-align: center;
+  }
+
+  .banner .main-section .main-heading{
+    font-size: 30px;
+  }
+
+  .banner .main-section .sec-content p{
+    font-size: 20px;
+  }
+
+  .main-sec-image{
+    margin-top: 60px;
+  }
+}
+
+/* main-banner---------------------------------------- */
+
+/* sec-section---------------------------------------- */
+
+.sec-section .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.sec-section .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(187, 185, 185, 0.568);
+  opacity: 1;
+}
+
+.sec-section .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0cb075;
+}
+
+@media only screen and (max-width: 600px){
+  .sec-section{
+    margin-top: -80px;
+  }  
+  
+}
+
+/* sec-section---------------------------------------- */
+
+/* features-section------------------------------------ */
+
+.features-section{
+  margin-top: 40px;
+}
+
+.features-section .icon-box {
+  text-align: center;
+  padding: 50px 60px;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+
+.features-section .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #eafbf0;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.features-section .icon-box .icon i {
+  color: #0cb075;
+  font-size: 28px;
+}
+
+.features-section .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.features-section .icon-box h4{
+  color: #384046;
+  transition: ease-in-out 0.3s;
+}
+.features-section .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.features-section .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.2);
+}
+.features-section .icon-box:hover h4, .features-section .icon-box:hover .icon i {
+  color: #0cb075;
+}
+
+/* features-section------------------------------------ */
+
+/* footer---------------------------------------------- */
+
+.footer-section{
+  margin-top: 100px;
+  background-color: #0cb075;
+  text-align: center;
+  padding-top: 40px;
+  height: 270px;
+}
+
+.footer-section h2{
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Hubballi", cursive;
+  color: #acfcde;
+}
+
+.footer-section .foot-link{
+  margin-top: 30px;
+}
+
+.footer-section .foot-link a{
+  text-decoration: none;
+  color: #e7e7e7;
+}
+
+.footer-section .social-links{
+  margin-top: 30px;
+}
+
+.footer-section .social-links a{
+  padding: 10px;
+}
+
+.footer-section .copyright-text{
+  margin-top: 40px;
+  color: #d3d3d3;
+}
+
+@media only screen and (max-width: 600px){
+  .footer-section{
+    height: 310px;
+  }
+}
+
+/* footer---------------------------------------------- */
