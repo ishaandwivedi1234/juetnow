@@ -1,22 +1,27 @@
-(function() {
+var URL = "https://play.google.com/store/apps/details?id=com.juetnowapp";
+function goToPlay() {
+  window.open(URL, "_blank");
+}
+
+(function () {
   "use strict";
 
   /**
    * Screenshot slider
    */
-  new Swiper('.screenshot-slider', {
+  new Swiper(".screenshot-slider", {
     speed: 600,
     loop: true,
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
   });
 
   /**
@@ -27,11 +32,10 @@
       duration: 1000,
       easing: "ease-in-out",
       once: true,
-      mirror: false
+      mirror: false,
     });
   }
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     aos_init();
   });
-
-})()
+})();
